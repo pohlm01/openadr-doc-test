@@ -1,0 +1,4 @@
+openadr-spec:
+  type: web
+  title: OpenADR 3.0 OpenAPI YAML (SwaggerDoc) Specification
+  url: https://github.com/oadr3/openapi-3.0.0
