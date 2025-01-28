@@ -7,11 +7,14 @@
   doc
 ) => {
   show link: set text(fill: blue.darken(30%))
+  show ref: set text(fill: blue.darken(30%))
   set heading(numbering: "1.")
-  set raw(theme: "dark.tmTheme")
+  show raw.where(block: true): set raw(theme: "dark.tmTheme")
+  show figure: set block(breakable: true)
+  show figure.where(kind: raw): set align(left)
+  show figure.caption: it => align(center, it)
   
-  
-  show raw: it => block(
+  show raw.where(block: true): it => block(
     width: 100%,
     fill: rgb("#1d2433"),
     inset: 8pt,
